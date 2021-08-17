@@ -70,6 +70,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.service, .team, .skills, .works, .feedback, .contact {
+  padding: 120px 0 128px;
+}
+
+@media (max-width: 767px) {
+  .service, .team, .skills, .works, .feedback, .contact {
+    padding: 80px 0 88px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service, .team, .skills, .works, .feedback, .contact {
+    padding: 40px 0 48px;
+  }
+}
+
 body {
   font-family: "Titillium Web";
   letter-spacing: 0.02em;
@@ -92,13 +108,6 @@ body {
   color: #fff;
 }
 
-.title-main {
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
 .title-line:after {
   content: '';
   display: block;
@@ -107,13 +116,6 @@ body {
   background-color: #000;
   opacity: 0.149;
   margin: 21px auto 24px;
-}
-
-.subtitle {
-  font-size: 18px;
-  line-height: 26px;
-  width: 54%;
-  margin: 0 auto;
 }
 
 .btn {
@@ -291,6 +293,30 @@ body {
   font-size: 42.16px;
   line-height: 48.82px;
   text-transform: none;
+}
+
+@media (max-width: 767px) {
+  .header__title-main {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__title-main {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__title-main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__title-main {
+    font-size: 20px;
+  }
 }
 
 .header__btn {
@@ -745,6 +771,13 @@ body {
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+  .works__tabs-content .item-works__img img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
 .works__btn {
   background-color: #17c2a4;
   margin: 83px auto 0;
@@ -885,12 +918,23 @@ body {
   }
 }
 
+.contact .form-contact__textarea-wrapper {
+  position: relative;
+}
+
+.contact .form-contact__textarea-wrapper img {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
 .contact .form-contact__textarea {
   display: block;
   width: 100%;
   height: 200px;
-  padding: 24px 0 0 25px;
+  padding: 24px  25px;
   margin: 0 0 59px 0;
+  resize: vertical;
 }
 
 .contact .form-contact ::-webkit-resizer {
@@ -899,4 +943,96 @@ body {
 
 .contact .form-contact__btn {
   background: #30bae7;
+}
+
+.footer {
+  background: #344b8e;
+  padding: 48px 0;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer__link {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer__link a {
+  color: #fff;
+}
+
+.footer__link a:hover {
+  color: #30bae7;
+}
+
+@media (max-width: 767px) {
+  .footer__link {
+    margin: 0 0 20px 0;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  width: 54%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .subtitle {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 12px;
+  }
+}
+
+.title-main {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .title-main {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-main {
+    font-size: 28px;
+  }
 }
